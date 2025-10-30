@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BBC-style Red Logo (SVG)</title>
+  <style>
+    :root{
+      /* change this to try different reds */
+      --box-color: #c8102e; /* vivid BBC-style red — change as needed */
+      --box-radius: 16;
+      --width: 420px; /* change to scale the whole logo */
+    }
+
+    body{
+      margin:0;
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:#f4f4f4;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .logo{
+      width: var(--width);
+      max-width: 90%;
+    }
+
+    svg{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    /* subtle hover effect (optional) */
+    .logo:hover rect{
+      filter: drop-shadow(0 6px 10px rgba(0,0,0,0.15));
+      transform-origin: center;
+    }
+
+    /* keep text crisp on some browsers */
+    text { shape-rendering: geometricPrecision; }
+  </style>
+</head>
+<body>
+  <!-- BBC-style red logo approximation -->
+  <div class="logo" aria-label="BBC red logo approximation">
+    <svg viewBox="0 0 420 140" role="img" xmlns="http://www.w3.org/2000/svg">
+      <title>BBC-style red logo</title>
+
+      <!-- three rounded red boxes -->
+      <g fill="var(--box-color)">
+        <rect x="10"  y="10" width="120" height="120" rx="var(--box-radius)" ry="var(--box-radius)"/>
+        <rect x="150" y="10" width="120" height="120" rx="var(--box-radius)" ry="var(--box-radius)"/>
+        <rect x="290" y="10" width="120" height="120" rx="var(--box-radius)" ry="var(--box-radius)"/>
+      </g>
+
+      <!-- white letters centered inside each box -->
+      <g fill="#fff" font-weight="700" font-family="Gill Sans, 'Helvetica Neue', Arial, sans-serif">
+        <text x="70"  y="80" font-size="64" text-anchor="middle" dominant-baseline="middle">B</text>
+        <text x="210" y="80" font-size="64" text-anchor="middle" dominant-baseline="middle">B</text>
+        <text x="350" y="80" font-size="64" text-anchor="middle" dominant-baseline="middle">C</text>
+      </g>
+    </svg>
+  </div>
+</body>
+</html>
+
+<body>
+  <header>
+    <h1>Global Daily News</h1>
+    <p>Your Trusted Source for Latest Updates</p>
+  </header>
+
+  <nav>
+    <a href="#world">World</a> |
+    <a href="#sports">Sports</a> |
+    <a href="#entertainment">Entertainment</a> |
+    <a href="#podcast">Podcast</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="world">
+      <h2>World News</h2>
+      <p><strong>Today’s top headline:</strong> Global leaders meet to discuss climate change initiatives.</p>
+      <p>Read more on <a href="https://www.bbc.com/news" target="_blank" rel="noopener">BBC</a>.</p>
+    </section>
+
+    <section id="sports">
+      <h2>Sports Update</h2>
+      <p>Highlights of yesterday’s football match with thrilling last-minute goals!</p>
+      <p>
+        <a href="https://www.youtube.com/watch?v=aqz-KE-bpKQ" target="_blank" rel="noopener">
+          Big Buck Bunny 60fps 4K - Official Blender Foundation Short
+        </a>
+      </p>
+    </section>
+
+    <section id="entertainment">
+      <h2>Entertainment Buzz</h2>
+      <p>New movie trailer released today. Fans are excited!</p>
+    </section>
+
+    <section id="podcast">
+      <h2>News Podcast</h2>
+      <p>Listen to today’s top headlines:</p>
+      <audio controls>
+        <source src="" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:info@globalnews.com">info@globalnews.com</a></p>
+    </section>
+
+    <div class="timestamp">10/3/25, 9:15 AM — Simple News Website</div>
+  </main>
+
+  <footer>
+    <p>© 2025 Global Daily News</p>
+  </footer>
+</body>
+</html>
